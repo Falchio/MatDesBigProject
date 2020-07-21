@@ -1,0 +1,32 @@
+<resources>
+    <style name="SecAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/secColor</item>
+        <item name="colorPrimaryDark">@color/secDarkColor</item>
+        <item name="colorAccent">@color/secAccentColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:windowBackground">@color/secWindowBackground</item>
+        <item name="android:navigationBarColor">@color/secNavBarColor</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:windowBackground">@color/primaryWindowBackground</item>
+        <item name="android:navigationBarColor">@color/primaryNavBarColor</item>
+    </style>
+
+
+    <style name="SecAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SecAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SecAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

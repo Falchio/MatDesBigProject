@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#ffa000</color>
+    <color name="primaryLightColor">#ffd149</color>
+    <color name="primaryDarkColor">#c67100</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="accentColor">#2a3eb1</color>
+    <color name="primaryWindowBackground">#eeeeee</color>
+    <color name="primaryNavBarColor">#bf360c</color>
+
+
+
+    <color name="secColor">#039be5</color>
+    <color name="secLightColor">#63ccff</color>
+    <color name="secDarkColor">#8aacc8</color>
+    <color name="secTextColor">#000000</color>
+    <color name="secAccentColor">#ffa000</color>
+    <color name="secWindowBackground">#eeeeee</color>
+    <color name="secNavBarColor">#bbdefb</color>
+
+
+
+
+</resources>
