@@ -13,10 +13,14 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.github.falchio.materialdesign.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+import static com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HALF_EXPANDED;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+    View bottomSheet;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +34,12 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+
+        bottomSheet = root.findViewById(R.id.bottom_sheet);
+        BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+        bottomSheetBehavior.setState(STATE_HALF_EXPANDED);
         return root;
     }
+
 }
