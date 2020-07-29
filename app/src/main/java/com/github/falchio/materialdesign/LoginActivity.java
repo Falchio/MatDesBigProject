@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTheme(R.style.LoginAppTheme);
 
         textInputLayout = findViewById(R.id.textField);
         editText = findViewById(R.id.edit_text);
@@ -34,15 +35,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        if (getSupportActionBar()!=null)  getSupportActionBar().hide();
 
         Button loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(v -> startApp());
+
+        Button closeButton = findViewById(R.id.close_button);
+        closeButton.setOnClickListener(v -> finishAffinity());
     }
 
     private void startApp() {
         try {
             if (Objects.requireNonNull(editText.getText()).toString().isEmpty()) {
-                Snackbar.make(editText, R.string.enter_something,Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(editText, R.string.enter_something, Snackbar.LENGTH_SHORT).show();
                 checkText(editText.getText());
                 return;
             }

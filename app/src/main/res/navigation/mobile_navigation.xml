@@ -22,4 +22,10 @@
         android:name="com.github.falchio.materialdesign.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_buttons"
+        android:name="com.github.falchio.materialdesign.ui.buttons.ButtonsFragment"
+        android:label="@string/buttons"
+        tools:layout="@layout/fragment_buttons" />
+
 </navigation>

@@ -13,4 +13,7 @@
     <string name="enter_something">Введите что-нибудь</string>
     <string name="enter_button">Войти</string>
     <string name="need_some_text">вводить здесь</string>
+    <string name="buttons">Buttons</string>
+    <string name="close">Закрыть</string>
+    <string name="text_button">Text button</string>
 </resources>

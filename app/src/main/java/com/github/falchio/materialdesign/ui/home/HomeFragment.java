@@ -38,7 +38,7 @@ public class HomeFragment extends Fragment {
 
         bottomSheet = root.findViewById(R.id.bottom_sheet);
         BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
-        bottomSheetBehavior.setState(STATE_HALF_EXPANDED);
+        bottomSheetBehavior.setState(BottomSheetBehavior.STATE_SETTLING);
         return root;
     }
 
