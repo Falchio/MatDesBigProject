@@ -3,22 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/main_group"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
             android:id="@+id/nav_buttons"
             android:icon="@drawable/ic_buttons"
-            android:title="@string/buttons"/>
+            android:title="@string/buttons" />
+        <item
+            android:id="@+id/nav_toolbar"
+            android:icon="@drawable/ic_toolbar_24"
+            android:title="@string/toolbar" />
+
+    </group>
+
+    <group
+        android:id="@+id/second_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fruits"
+            android:icon="@drawable/ic_fruits_24"
+            android:title="@string/fruits" />
+
+        <item
+            android:id="@+id/nav_nature"
+            android:icon="@drawable/ic_nature_24"
+            android:title="@string/nature"/>
     </group>
 </menu>
