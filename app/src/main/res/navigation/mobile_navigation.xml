@@ -12,20 +12,28 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.github.falchio.materialdesign.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.github.falchio.materialdesign.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
         android:id="@+id/nav_buttons"
         android:name="com.github.falchio.materialdesign.ui.buttons.ButtonsFragment"
         android:label="@string/buttons"
         tools:layout="@layout/fragment_buttons" />
+
+    <fragment
+        android:id="@+id/nav_toolbar"
+        android:name="com.github.falchio.materialdesign.ui.toolbar_demo.ToolbarFragment"
+        android:label="@string/toolbar"
+        tools:layout="@layout/fragment_toolbar" />
+
+
+    <fragment
+        android:id="@+id/nav_fruits"
+        android:name="com.github.falchio.materialdesign.ui.fruits.FruitsFragment"
+        android:label="@string/fruits"
+        tools:layout="@layout/fragment_fruits"/>
+
+    <fragment
+        android:id="@+id/nav_nature"
+        android:name="com.github.falchio.materialdesign.ui.nature.NatureFragment"
+        android:label="@string/nature"
+        tools:layout="@layout/fragment_nature"/>
 
 </navigation>

@@ -16,4 +16,9 @@
     <string name="buttons">Buttons</string>
     <string name="close">Закрыть</string>
     <string name="text_button">Text button</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="hide">Hide</string>
+    <string name="show">Show</string>
+    <string name="fruits">Fruits</string>
+    <string name="nature">Nature</string>
 </resources>
