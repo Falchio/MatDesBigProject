@@ -1,4 +1,4 @@
-package com.github.falchio.materialdesign.ui.toolbar_demo;
+package com.github.falchio.materialdesign.ui.progress_bars;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,16 +9,17 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.github.falchio.materialdesign.R;
+import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 
-public class ToolbarFragment extends Fragment {
+public class ProgressBarFragment extends BaseFragment {
+    private String title="Progress Bar";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_toolbar, container, false);
+        View root = inflater.inflate(R.layout.fragment_progressbar, container, false);
 
         Button showButton = root.findViewById(R.id.show_progress_bar_button);
         Button hideButton = root.findViewById(R.id.hide_progress_bar_button);

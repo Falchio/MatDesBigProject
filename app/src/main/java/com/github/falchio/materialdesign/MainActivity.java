@@ -1,6 +1,7 @@
 package com.github.falchio.materialdesign;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Log.e("TAG", "onCreate: " + getSupportActionBar() );
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -35,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home,  R.id.nav_buttons, R.id.nav_toolbar, R.id.nav_fruits, R.id.nav_nature)
+                R.id.nav_home,  R.id.nav_buttons, R.id.nav_toolbar, R.id.nav_fruits, R.id.nav_nature, R.id.nav_collapsing_toolbar)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override

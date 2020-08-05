@@ -19,21 +19,27 @@
 
     <fragment
         android:id="@+id/nav_toolbar"
-        android:name="com.github.falchio.materialdesign.ui.toolbar_demo.ToolbarFragment"
-        android:label="@string/toolbar"
-        tools:layout="@layout/fragment_toolbar" />
+        android:name="com.github.falchio.materialdesign.ui.progress_bars.ProgressBarFragment"
+        android:label="@string/progress_bar"
+        tools:layout="@layout/fragment_progressbar" />
 
 
     <fragment
         android:id="@+id/nav_fruits"
         android:name="com.github.falchio.materialdesign.ui.fruits.FruitsFragment"
         android:label="@string/fruits"
-        tools:layout="@layout/fragment_fruits"/>
+        tools:layout="@layout/fragment_fruits" />
 
     <fragment
         android:id="@+id/nav_nature"
         android:name="com.github.falchio.materialdesign.ui.nature.NatureFragment"
         android:label="@string/nature"
-        tools:layout="@layout/fragment_nature"/>
+        tools:layout="@layout/fragment_nature" />
+
+    <fragment
+        android:id="@+id/nav_collapsing_toolbar"
+        android:name="com.github.falchio.materialdesign.ui.collapsing_toolbar_layout.CollapsingFragment"
+        android:label="@string/collapsing_toolbar"
+        tools:layout="@layout/fragment_collapsing_toolbar" />
 
 </navigation>
