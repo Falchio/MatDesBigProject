@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="SecAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="SecAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/secColor</item>
         <item name="colorPrimaryDark">@color/secDarkColor</item>

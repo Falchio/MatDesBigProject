@@ -7,13 +7,15 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.github.falchio.materialdesign.R;
+import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment {
+    private String title="Home";
+
 
     private HomeViewModel homeViewModel;
     View bottomSheet;

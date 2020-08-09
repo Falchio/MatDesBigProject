@@ -7,11 +7,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.github.falchio.materialdesign.R;
+import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 
-public class NatureFragment extends Fragment {
+public class NatureFragment extends BaseFragment {
+    private String title="Nature";
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

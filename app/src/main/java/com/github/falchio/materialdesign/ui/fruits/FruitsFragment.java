@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.github.falchio.materialdesign.R;
+import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 
-public class FruitsFragment extends Fragment {
-
+public class FruitsFragment extends BaseFragment {
+    private String title="Fruits";
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_fruits, container, false);

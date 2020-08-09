@@ -6,14 +6,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+import androidx.annotation.Nullable;
 
 import com.github.falchio.materialdesign.R;
+import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 
-public class ButtonsFragment extends Fragment {
+public class ButtonsFragment extends BaseFragment {
+    private String title = "Buttons";
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_buttons, container, false);
     }
+
 }
