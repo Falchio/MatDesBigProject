@@ -9,17 +9,19 @@
     app:behavior_hideable="true"
     app:behavior_peekHeight="40dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/accentColor"
         android:gravity="center"
-        android:text="Справка"
+        android:text="@string/reference"
         android:textColor="@android:color/white" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Это справка"
+        android:text="@string/app_function"
         android:textColor="@android:color/white" />
 </LinearLayout>

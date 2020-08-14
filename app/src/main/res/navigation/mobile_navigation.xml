@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_bottom_sheet">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.github.falchio.materialdesign.ui.home.HomeFragment"
+        android:id="@+id/nav_bottom_sheet"
+        android:name="com.github.falchio.materialdesign.ui.home.BottomSheetFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
