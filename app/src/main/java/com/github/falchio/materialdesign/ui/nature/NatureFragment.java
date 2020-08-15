@@ -29,6 +29,12 @@ public class NatureFragment extends BaseFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         FragmentPagerAdapter natureAdapter = new NaturePagerAdapter(requireActivity().getSupportFragmentManager(), 0);
         ViewPager viewPager = root.findViewById(R.id.view_pager);
         viewPager.setAdapter(natureAdapter);
@@ -36,5 +42,4 @@ public class NatureFragment extends BaseFragment {
         TabLayout tabLayout = root.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager, true);
     }
-
 }

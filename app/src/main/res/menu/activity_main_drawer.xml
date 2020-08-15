@@ -38,5 +38,11 @@
             android:id="@+id/nav_nature"
             android:icon="@drawable/ic_nature_24"
             android:title="@string/nature" />
+
+        <item
+            android:id="@+id/nav_bottom_navigation_view"
+            android:icon="@drawable/ic_bottom_nav_24"
+            android:title="@string/bottom_navigation" />
+
     </group>
 </menu>

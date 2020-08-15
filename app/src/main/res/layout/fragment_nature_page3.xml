@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:id="@+id/img_nature_page3"
         android:src="@drawable/forest"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:contentDescription="@string/forest" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

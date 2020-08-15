@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.LinearInterpolator;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,9 +12,10 @@ import androidx.annotation.Nullable;
 import com.github.falchio.materialdesign.R;
 import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CollapsingFragment extends BaseFragment {
-    private String title="Collapsing Toolbar";
+    private String title = "Collapsing Toolbar";
 
     @Nullable
     @Override
@@ -24,7 +26,14 @@ public class CollapsingFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-        AppBarLayout appBarLayout=requireActivity().findViewById(R.id.app_bar_layout);
-        appBarLayout.setExpanded(true,true);
+        AppBarLayout appBarLayout = requireActivity().findViewById(R.id.app_bar_layout);
+        appBarLayout.setExpanded(true, true);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        FloatingActionButton fab = requireActivity().findViewById(R.id.fab);
+        fab.animate().translationY(0).setInterpolator(new LinearInterpolator()).start();
     }
 }

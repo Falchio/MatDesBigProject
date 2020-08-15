@@ -7,8 +7,9 @@
         android:id="@+id/img_nature_page1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/mount"
-        android:scaleType="fitXY"/>
+        android:src="@drawable/mountains"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/mountains" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

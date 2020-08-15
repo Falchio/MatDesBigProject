@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_river"
+        android:orderInCategory="100"
+        android:title="@string/river"
+        android:icon="@drawable/ic_river_24"/>
+
+    <item
+        android:id="@+id/nav_mountains"
+        android:orderInCategory="200"
+        android:title="@string/mountains"
+        android:icon="@drawable/ic_mountains_24"/>
+
+    <item
+        android:id="@+id/nav_forest"
+        android:orderInCategory="300"
+        android:title="@string/forest"
+        android:icon="@drawable/ic_forest_24"/>
+
+</menu>

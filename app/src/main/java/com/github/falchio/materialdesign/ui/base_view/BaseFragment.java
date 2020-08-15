@@ -19,7 +19,5 @@ abstract public class BaseFragment extends Fragment {
         collapsingToolbarLayout.setTitle(title);
         AppBarLayout appBarLayout = requireActivity().findViewById(R.id.app_bar_layout);
         appBarLayout.setExpanded(true);
-        FloatingActionButton fab = requireActivity().findViewById(R.id.fab);
-        fab.animate().translationY(0).setInterpolator(new LinearInterpolator()).start();
     }
 }
