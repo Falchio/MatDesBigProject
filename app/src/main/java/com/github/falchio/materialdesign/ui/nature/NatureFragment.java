@@ -15,7 +15,7 @@ import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class NatureFragment extends BaseFragment {
-    private String title="Nature";
+    private String title = "Nature";
     private View root;
 
     @Nullable

@@ -14,7 +14,7 @@ import com.github.falchio.materialdesign.R;
 import com.github.falchio.materialdesign.ui.base_view.BaseFragment;
 
 public class ProgressBarFragment extends BaseFragment {
-    private String title="Progress Bar";
+    private String title = "Progress Bar";
 
     @Nullable
     @Override

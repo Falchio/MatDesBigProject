@@ -42,9 +42,9 @@ public class BottomSheetFragment extends Fragment {
 
     @Override
     public void onResume() {
-        title=getString(R.string.bottom_sheet);
+        title = getString(R.string.bottom_sheet);
         super.onResume();
-        CollapsingToolbarLayout collapsingToolbarLayout =requireActivity().findViewById(R.id.toolbar_layout);
+        CollapsingToolbarLayout collapsingToolbarLayout = requireActivity().findViewById(R.id.toolbar_layout);
         collapsingToolbarLayout.setTitle(title);
         AppBarLayout appBarLayout = requireActivity().findViewById(R.id.app_bar_layout);
         appBarLayout.setExpanded(false);

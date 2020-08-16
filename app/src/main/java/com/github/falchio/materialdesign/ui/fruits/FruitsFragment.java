@@ -26,10 +26,10 @@ public class FruitsFragment extends BaseFragment {
         List<CardFruits> fruitsList = new ArrayList<>();
         int imageId;
 
-        for (int i =1; i<=20; i++){
-            if (i%2==0){
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
                 imageId = R.drawable.fruits;
-            }else {
+            } else {
                 imageId = R.drawable.nature;
             }
             fruitsList.add(new CardFruits("Title: fruit #" + i, "Description: description #" + i, imageId));
