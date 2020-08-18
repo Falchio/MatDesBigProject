@@ -1,6 +1,7 @@
 package com.github.falchio.materialdesign;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,13 +10,14 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.falchio.materialdesign.ui.base_view.BaseActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
     TextInputLayout textInputLayout;
     TextInputEditText editText;
 
@@ -23,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        setTheme(R.style.LoginAppTheme);
 
         textInputLayout = findViewById(R.id.textField);
         editText = findViewById(R.id.edit_text);
@@ -77,5 +78,4 @@ public class LoginActivity extends AppCompatActivity {
             editText.setError(getResources().getString(R.string.enter_something));
         }
     }
-
 }
