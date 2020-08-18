@@ -36,7 +36,7 @@ public class FruitsAdapter extends RecyclerView.Adapter<FruitsAdapter.CardFruits
         holder.description.setText(currentCard.getDescription());
         holder.imageView.setImageResource(currentCard.getImageID());
 
-        View.OnClickListener onClickListener = v -> Toast.makeText(v.getContext(), "You clicked on card #" + (position+1), Toast.LENGTH_SHORT).show();
+        View.OnClickListener onClickListener = v -> Toast.makeText(v.getContext(), "You clicked on card #" + (position + 1), Toast.LENGTH_SHORT).show();
 
         holder.imageView.setOnClickListener(onClickListener);
         holder.title.setOnClickListener(onClickListener);

@@ -97,5 +97,12 @@ Scoping can be costly because the provided object stays in memory until the hold
 However, when you do need to scope, you can use Hilt’s scoping annotations or the Android framework directly.</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
+    <string name="reference">Справка</string>
+    <string name="app_function">Приложение предназначено для демонстрации элементов Material Design</string>
+    <string name="bottom_sheet">Bottom Sheet</string>
+    <string name="river">River</string>
+    <string name="mountains">Mountains</string>
+    <string name="forest">Forest</string>
+    <string name="bottom_navigation">Bottom Navigation</string>
 
 </resources>

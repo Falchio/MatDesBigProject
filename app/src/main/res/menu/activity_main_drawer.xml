@@ -7,9 +7,9 @@
         android:id="@+id/main_group"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_bottom_sheet"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/bottom_sheet" />
         <item
             android:id="@+id/nav_buttons"
             android:icon="@drawable/ic_buttons"
@@ -38,5 +38,11 @@
             android:id="@+id/nav_nature"
             android:icon="@drawable/ic_nature_24"
             android:title="@string/nature" />
+
+        <item
+            android:id="@+id/nav_bottom_navigation_view"
+            android:icon="@drawable/ic_bottom_nav_24"
+            android:title="@string/bottom_navigation" />
+
     </group>
 </menu>

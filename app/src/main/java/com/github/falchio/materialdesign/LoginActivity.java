@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        if (getSupportActionBar()!=null)  getSupportActionBar().hide();
+        if (getSupportActionBar() != null) getSupportActionBar().hide();
 
         Button loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(v -> startApp());
