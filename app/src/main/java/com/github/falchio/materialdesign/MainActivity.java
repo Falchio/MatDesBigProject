@@ -1,13 +1,18 @@
 package com.github.falchio.materialdesign;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.github.falchio.materialdesign.ui.base_view.BaseActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,14 +21,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends BaseActivity {
     private AppBarConfiguration mAppBarConfiguration;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Log.e("TAG", "onCreate: " + getSupportActionBar());
@@ -60,5 +66,19 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        final String THEME_TAG = "AppTheme";
+        if (item.getItemId() == R.id.change_theme) {
+            SharedPreferences sharedPref = getSharedPreferences(THEME_TAG, MODE_PRIVATE);
+            boolean isDefaultTheme = !sharedPref.getBoolean(THEME_TAG, true);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putBoolean(THEME_TAG, isDefaultTheme);
+            editor.apply();
+            recreate();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

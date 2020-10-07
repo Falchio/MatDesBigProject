@@ -104,5 +104,9 @@ However, when you do need to scope, you can use Hilt’s scoping annotations or 
     <string name="mountains">Mountains</string>
     <string name="forest">Forest</string>
     <string name="bottom_navigation">Bottom Navigation</string>
+    <string name="change_theme">Change theme</string>
+    <string name="outlined_button">Outlined button</string>
+    <string name="identical_buttons">identical buttons</string>
+    <string name="contained_button">Contained button</string>
 
 </resources>
